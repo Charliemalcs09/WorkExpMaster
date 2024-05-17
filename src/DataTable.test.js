@@ -1,5 +1,5 @@
 import { render, screen, waitFor } from '@testing-library/react';
-import DataTable from './DataTable';
+import DataTable from './DataTableList';
 
 function checkElement(theText, theTag)
 {
@@ -14,7 +14,7 @@ test('renders item zero from data', () => {
   checkElement("Name: hammer", "P");
   checkElement("Size: medium", "P");
   checkElement("Department: tools", "P");
-  checkElement("Proce: 12.5", "P");  
+  checkElement("Price: 12.50", "P");  
   checkElement("Next", "BUTTON");
 
 });
